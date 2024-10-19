@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-$7t5p(8+!*vce^#_s-(-o)7l6mya_iqrncz$m*1as^qqk(%xaj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 AUTH_USER_MODEL = 'user_auth.User'
 
@@ -116,10 +116,10 @@ WSGI_APPLICATION = 'fundoo_notes.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DATABASE_NAME'),
-        'USER': os.getenv('DATABASE_USER'),
-        'PASSWORD': os.getenv('DATABASE_PASSWORD'),
-        'HOST': os.getenv('DATABASE_HOST'),
+        'NAME': "user",
+        'USER': "postgres",
+        'PASSWORD': "7387837430",
+        'HOST': "*",
         'PORT': '5432',
     }
 }
